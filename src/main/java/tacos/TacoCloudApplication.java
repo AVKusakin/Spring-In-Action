@@ -1,13 +1,13 @@
-package org.example.springinaction;
+package tacos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringInActionApplication {
+public class TacoCloudApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringInActionApplication.class, args);
+        SpringApplication.run(TacoCloudApplication.class, args);
     }
 
 }
