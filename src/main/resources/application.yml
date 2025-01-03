@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Spring-In-Action
+  datasource:
+    generate-unique-name: false
+    name: tacocloud
+server:
+  port: 8081
