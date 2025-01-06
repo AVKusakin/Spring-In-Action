@@ -9,6 +9,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.Column;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -27,6 +28,7 @@ public class Taco {
     @Size(min = 5, message = "Name must be at least 5 characters long")
     private String name;
 
+    @Column(name = "created_at")
     private Date createAt = new Date();
 
     @Size(min = 1, message = "You must choose at least 1 ingredient")

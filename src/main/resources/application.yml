@@ -4,5 +4,12 @@ spring:
   datasource:
     generate-unique-name: false
     name: tacocloud
+    username: sa
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
 server:
   port: 8081
