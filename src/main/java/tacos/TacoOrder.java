@@ -22,9 +22,11 @@ import jakarta.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.CreditCardNumber;
 
 import lombok.Data;
+import org.springframework.data.rest.core.annotation.RestResource;
 
 @Data
 @Entity
+@RestResource(rel = "orders", path = "orders")
 public class TacoOrder implements Serializable {
 
     @Serial

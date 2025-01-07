@@ -18,6 +18,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import tacos.data.IngredientRepository;
 import tacos.data.OrderRepository;
+import tacos.data.TacoRepository;
 import tacos.data.UserRepository;
 
 @ExtendWith(SpringExtension.class)
@@ -41,6 +42,9 @@ public class HomeControllerTest {
 
     @MockitoBean
     private SecurityFilterChain securityFilterChain;
+
+    @MockitoBean
+    private TacoRepository tacoRepository;
 
     @Test
     public void testHomePage() throws Exception {
